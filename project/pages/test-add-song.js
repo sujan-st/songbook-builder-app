@@ -1,14 +1,10 @@
-const handleSubmit = async (e) => {
-  e.preventDefault();
+// project/pages/test-add-song.js
 
-  const res = await fetch('/api/songs', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ title, lyrics, artist }),
-  });
-
-  const data = await res.json();
-  console.log('Response:', data); // <== ADD THIS
-};
+export default function TestAddSong() {
+  return (
+    <div>
+      <h1>Add Song Test Page</h1>
+      {/* You can put your add-song form here */}
+    </div>
+  );
+}
